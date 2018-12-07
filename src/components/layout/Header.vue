@@ -1,5 +1,5 @@
 <template>
-  <header class="flex-container">
+  <header class="flex-container flex-space-between">
     <div class="title">
       <!-- logo -->
       <span>Logo</span>
