@@ -1,9 +1,24 @@
 <template>
     <div class="Form flex-container">
-        <input type="text" id="message">
-        <button id="sendBtn">send</button>
+        <input type="text" id="message" v-model="message">
+        <button id="sendBtn" v-on:click="sendMessage()">send</button>
     </div>
 </template>
+<script>
+export default {
+    data () {
+        return {
+            message: ''
+        }
+    },
+    methods: {
+        sendMessage: function() {
+            console.log(this.message);
+        }
+    }
+}
+</script>
+
 <style lang="scss" scoped>
 .Form {
     bottom: 30px;
